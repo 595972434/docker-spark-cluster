@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  spark-master:
+    image: cas001/spark-master:2.4.5-hadoop2.7
+    container_name: cas001-spark-master
+    ports:
+      - "7077:7077"   # SPARK_MASTER_PORT
+      - "8080:8080"   # SPARK_MASTER_WEBUI_PORT
+
+  spark-worker:
+    image: cas001/spark-worker:2.4.5-hadoop2.7
+    ports:
+      - "8081"

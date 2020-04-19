@@ -1,2 +1,4 @@
 # docker-spark-cluster
-create spark cluster with docker
+### how to use
+- `docker-compose up -d`
+- see [Here]() to know more about this
